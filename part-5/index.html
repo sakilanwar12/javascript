@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types: Non-primitive Data Type</title>
+</head>
+
+<body>
+
+    <!-- Objects, Arrays, Reg Expression-->
+    <!-- Objects -->
+
+    <script>
+
+        // objects
+        var students = {
+            "id": 1,
+            "firstName": "Hasan",
+            "lastName": "Ali",
+            "age": 12,
+            "class": "6",
+            "key": "value"
+        };
+
+        // we can include data
+        students.gender = "male";
+        delete students.firstName;
+
+        const keys = Object.keys(students);
+        const values = Object.values(students);
+        var entries = Object.entries(students);
+        document.write(keys, values);
+        
+        // destructure
+        const players = {
+            "id": 1,
+            "name": "sakib",
+            "age": "36"
+        };
+        const { id, name, age } = players;
+        console.log(id, name, age)
+
+
+    </script>
+</body>
+
+</html>
